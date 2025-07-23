@@ -3,6 +3,7 @@ package com.sky.service.impl;
 import com.sky.constant.MessageConstant;
 import com.sky.constant.PasswordConstant;
 import com.sky.constant.StatusConstant;
+import com.sky.context.BaseContext;
 import com.sky.dto.EmployeeDTO;
 import com.sky.dto.EmployeeLoginDTO;
 import com.sky.entity.Employee;
@@ -81,8 +82,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         //设置当前记录的创建人id和修改人id
         // TODO  后续需要改为当前登陆用户的id
-        employee2.setCreateUser(10L);
-        employee2.setUpdateUser(10L);
+        employee2.setCreateUser(BaseContext.getCurrentId());
+        employee2.setUpdateUser(BaseContext.getCurrentId());
 
         employeeMapper.inert(employee2);
     }

@@ -85,7 +85,9 @@ public class EmployeeController {
     @PostMapping
     @ApiOperation("新增员工")
     public Result save(@RequestBody EmployeeDTO employee){
+        System.out.println("当前线程id3："+ Thread.currentThread().getId());
         log.info("新增员工{}", employee);
+        System.out.println("当前线程id2："+ Thread.currentThread().getId());
         employeeService.save(employee);
         return Result.success();
     }
