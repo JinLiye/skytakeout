@@ -39,7 +39,7 @@ public class EmployeeController {
     @Autowired
     private JwtProperties jwtProperties;
 
-    private static final Logger log = LoggerFactory.getLogger(AliOssUtil.class);
+        private static final Logger log = LoggerFactory.getLogger(AliOssUtil.class);
 
     /**
      * 登录
