@@ -9,7 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @RestController("userShopController")
-@RequestMapping("/usr/shop")
+@RequestMapping("/user/shop")
 @Api("店铺相关接口")
 @Slf4j
 public class ShopController {

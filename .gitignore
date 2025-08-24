@@ -3,5 +3,5 @@
 *.iml
 *.class
 *Test.java
-**/test/
 *.yml
+*.DS_Store
